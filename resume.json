@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Carlos Iván Díaz Hidalgo",
+    "label": "Ingeniero de Software Backend Senior · Java & IA aplicada (RAG / LLMs)",
+    "email": "carlos.dh08@gmail.com",
+    "phone": "+593 96 057 3776",
+    "url": "https://cdiazhi.github.io/",
+    "summary": "Ingeniero en Informática y Ciencias de la Computación con más de 17 años de experiencia en desarrollo backend, arquitectura de software y bases de datos en instituciones públicas y privadas de Ecuador. Especialista en Java (8–17, Jakarta EE, Spring Boot, JSF, Struts), microservicios, API REST y optimización de Oracle PL/SQL y PostgreSQL. Maestría en IA Aplicada (en proceso de titulación) con un sistema RAG multiagente sobre LLMs evaluado en 800 ejecuciones con RAGAS.",
+    "location": { "city": "Quito", "countryCode": "EC" },
+    "profiles": [
+      { "network": "LinkedIn", "username": "carlos-diaz-hidalgo", "url": "https://www.linkedin.com/in/carlos-diaz-hidalgo" },
+      { "network": "GitHub", "username": "cdiazhi", "url": "https://github.com/cdiazhi" }
+    ]
+  },
+  "work": [
+    { "name": "Servicio de Rentas Internas (SRI)", "position": "Especialista de Desarrollo", "startDate": "2022-08", "endDate": "2026-08",
+      "highlights": ["Administración y mantenimiento de aplicaciones Java empresariales en producción para procesos tributarios críticos.",
+                     "Interfaces JSF y persistencia JPA sobre Oracle.",
+                     "Clean Code y codificación segura; optimización de SQL y PL/SQL."] },
+    { "name": "Kruger Corp", "position": "Consultor Técnico", "startDate": "2022-06", "endDate": "2022-07",
+      "highlights": ["Mantenimiento correctivo y desarrollo de módulos web en Java, Struts y JavaScript."] },
+    { "name": "Banco Central del Ecuador", "position": "Especialista de Desarrollo Informático", "startDate": "2021-09", "endDate": "2021-12",
+      "highlights": ["Componentes Java empresariales, QA y documentación técnica.", "Soporte de aplicaciones transaccionales en Java, JSF y Sybase."] },
+    { "name": "BIESS", "position": "Analista Senior de Mantenimiento y Programación", "startDate": "2021-03", "endDate": "2021-08",
+      "highlights": ["Servicios web en Java y JSF para solicitudes crediticias.", "Optimización de consultas en Oracle y PostgreSQL."] },
+    { "name": "SOAINT S.A.", "position": "Ingeniero de Software", "startDate": "2020-01", "endDate": "2021-01",
+      "summary": "Periodos: ene.–feb. 2020 y nov. 2020 – ene. 2021.",
+      "highlights": ["Microservicios y API REST en Spring Boot sobre Oracle; interfaces React JS para POS.", "Integración segura de datos con servicios REST bajo Scrum."] },
+    { "name": "Desarrollo independiente", "position": "Ingeniero de Software Freelance", "startDate": "2020-03", "endDate": "2021-11",
+      "highlights": ["Apps Android nativas en Kotlin y sistemas web/desktop en Spring Boot con TDD."] },
+    { "name": "Secretaría Técnica Plan Toda Una Vida", "position": "Analista de Desarrollo", "startDate": "2019-10", "endDate": "2019-11",
+      "highlights": ["Robot de validación de identidad e información tributaria sobre PostgreSQL; QA de app Android."] },
+    { "name": "Ministerio de Agricultura y Ganadería", "position": "Analista de Soporte e Infraestructura", "startDate": "2018-07", "endDate": "2019-04",
+      "highlights": ["APIs de microservicios en Java 8, mantenimiento en Spring Framework y QA."] },
+    { "name": "IFTH", "position": "Analista de Becas", "startDate": "2017-10", "endDate": "2017-12",
+      "highlights": ["Análisis funcional de la plataforma PUSAK (Java EE, JBoss EAP 6.4)."] },
+    { "name": "SENESCYT", "position": "Analista de Proyectos III", "startDate": "2016-06", "endDate": "2016-12",
+      "highlights": ["Requerimientos con Scrum, JasperReports Server y desarrollo Java/JSF/PrimeFaces."] },
+    { "name": "Ministerio de Educación", "position": "Analista de Telecomunicaciones y Web", "startDate": "2014-09", "endDate": "2015-11",
+      "highlights": ["Java EE 7 sobre JBoss y reportes JasperReports en Oracle 11g."] },
+    { "name": "ARCOM", "position": "Analista de Desarrollo Tecnológico", "startDate": "2013-10", "endDate": "2014-03",
+      "highlights": ["Desarrollo en PowerBuilder, consultas Sybase y soporte técnico."] },
+    { "name": "Sonda del Ecuador", "position": "Ingeniero de Software", "startDate": "2008-05", "endDate": "2011-11",
+      "highlights": ["Interfaces web empresariales en Java."] },
+    { "name": "Power Games / Power PC", "position": "Desarrollador de Software", "startDate": "2004-03", "endDate": "2008-02",
+      "highlights": ["Sistemas Java EE, Oracle Designer, Forms/Reports 6i y aplicaciones móviles."] }
+  ],
+  "education": [
+    { "institution": "Universidad Tecnológica Israel", "area": "Inteligencia Artificial Aplicada", "studyType": "Maestría (en proceso de validación)",
+      "courses": ["Trabajo de titulación: sistema RAG multiagente con LLMs para consulta de normativa tributaria ecuatoriana"] },
+    { "institution": "Universidad Cristiana Latinoamericana", "area": "Informática y Ciencias de la Computación", "studyType": "Ingeniería" }
+  ],
+  "certificates": [
+    { "name": "Java SE 17 Developer (1Z0-829)", "issuer": "Pearson · Coursera" },
+    { "name": "Scalable Microservices for Developers", "issuer": "Vanderbilt University · Coursera", "url": "https://coursera.org/verify/specialization/2NDCUE4T87QJ" },
+    { "name": "Apache Kafka", "issuer": "LearnKartS · Coursera", "url": "https://coursera.org/verify/specialization/QN2WPUDOQIRR" },
+    { "name": "Secure Coding Practices", "issuer": "UC Davis · Coursera", "url": "https://coursera.org/verify/specialization/1OIIJQPPL1WL" },
+    { "name": "Develop Generative AI Applications: Get Started", "issuer": "IBM · Coursera", "url": "https://coursera.org/verify/VMEP46M9EB4A" },
+    { "name": "Build RAG Applications: Get Started", "issuer": "IBM · Coursera", "url": "https://coursera.org/verify/NZGUARRQR1BU" },
+    { "name": "Vector Databases for RAG: An Introduction", "issuer": "IBM · Coursera", "url": "https://coursera.org/verify/ZJI6NE7PAJXV" },
+    { "name": "AI for App Building", "issuer": "Google · Coursera", "url": "https://coursera.org/verify/L1QZV1ENMLB6" },
+    { "name": "Crea una aplicación web con Vue.js (proyecto guiado)", "issuer": "Coursera", "url": "https://coursera.org/verify/7EI4OMTW3KKQ" },
+    { "name": "Amazon Bedrock Getting Started", "issuer": "AWS Training & Certification" },
+    { "name": "Scrum Foundation Professional Certificate (SFPC)", "issuer": "CertiProf" },
+    { "name": "Business Intelligence Foundation Professional Certificate (BIFPC)", "issuer": "CertiProf" }
+  ],
+  "skills": [
+    { "name": "Backend Java", "level": "Senior", "keywords": ["Java 8–17", "Jakarta EE", "Spring Boot", "Spring Cloud", "Quarkus", "JPA/Hibernate", "JSF", "Struts", "API REST", "Microservicios"] },
+    { "name": "Bases de datos", "keywords": ["Oracle SQL/PL-SQL", "PostgreSQL", "Sybase", "ChromaDB"] },
+    { "name": "IA generativa", "keywords": ["LLMs", "RAG multiagente", "Embeddings", "Bases vectoriales", "Grafos de conocimiento", "RAGAS", "Ollama", "Prompt engineering"] },
+    { "name": "Mensajería y frontend", "keywords": ["Apache Kafka", "Kafka Streams", "Kafka Connect", "React JS", "Vue.js"] },
+    { "name": "Cloud & DevOps", "keywords": ["Docker", "Kubernetes", "Jenkins", "CI/CD", "Git", "AWS Bedrock", "Azure AI", "OCI"] },
+    { "name": "Seguridad y métodos", "keywords": ["Secure coding", "Modelado de amenazas", "TDD", "Scrum", "Clean Code", "Clean Architecture"] }
+  ],
+  "languages": [
+    { "language": "Español", "fluency": "Nativo" },
+    { "language": "Inglés", "fluency": "Intermedio" },
+    { "language": "Francés", "fluency": "Básico" }
+  ]
+}

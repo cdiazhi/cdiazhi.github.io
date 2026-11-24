@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carlos Iván Díaz Hidalgo | Ingeniero de Software Backend Senior · Java &amp; IA aplicada</title>
+<meta name="description" content="Ingeniero de Software Backend con 17 años de experiencia en Java (8–17, Jakarta EE, Spring Boot), microservicios, Oracle y PostgreSQL. Maestría en IA Aplicada con un sistema RAG multiagente sobre LLMs. Quito, Ecuador · remoto o presencial.">
+<meta name="author" content="Carlos Iván Díaz Hidalgo">
+<link rel="canonical" href="https://cdiazhi.github.io/">
+<link rel="alternate" hreflang="es" href="https://cdiazhi.github.io/">
+<link rel="alternate" hreflang="en" href="https://cdiazhi.github.io/?lang=en">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b1324" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+
+<!-- Vista previa al compartir en LinkedIn, WhatsApp, etc. -->
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://cdiazhi.github.io/">
+<meta property="og:title" content="Carlos Iván Díaz Hidalgo · Backend Java Senior & IA aplicada">
+<meta property="og:description" content="17 años en Java, microservicios, Oracle y PostgreSQL. Sistema RAG multiagente con LLMs evaluado en 800 ejecuciones.">
+<meta property="og:image" content="https://cdiazhi.github.io/assets/og-image.png">
+<meta property="og:locale" content="es_EC">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Datos estructurados: permiten que buscadores y asistentes de IA entiendan el perfil -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Carlos Iván Díaz Hidalgo",
+    "jobTitle": "Ingeniero de Software Backend Senior · Java & IA aplicada",
+    "url": "https://cdiazhi.github.io/",
+    "email": "mailto:carlos.dh08@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Quito", "addressCountry": "EC" },
+    "sameAs": ["https://www.linkedin.com/in/carlos-diaz-hidalgo", "https://github.com/cdiazhi"],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Universidad Cristiana Latinoamericana" },
+      { "@type": "CollegeOrUniversity", "name": "Universidad Tecnológica Israel" }
+    ],
+    "knowsLanguage": ["es", "en", "fr"],
+    "knowsAbout": ["Java", "Jakarta EE", "Spring Boot", "Microservicios", "API REST", "Apache Kafka",
+                   "Oracle PL/SQL", "PostgreSQL", "RAG", "LLMs", "Bases vectoriales", "Secure coding"]
+  }
+}
+</script>
+
+<style>
+:root{
+  --bg:#f6f8fb; --bg2:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e2e8f0;
+  --acc:#1d4ed8; --acc2:#0891b2; --chip:#eef2ff; --chipfg:#1e3a8a; --shadow:0 1px 2px rgb(15 23 42/.06),0 8px 24px rgb(15 23 42/.06);
+  --radius:14px; --max:1080px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+:root[data-theme="dark"]{
+  --bg:#0b1324; --bg2:#111b33; --fg:#e5e9f2; --muted:#9aa6bd; --line:#1f2b46;
+  --acc:#60a5fa; --acc2:#22d3ee; --chip:#16233f; --chipfg:#bfdbfe; --shadow:0 1px 2px rgb(0 0 0/.3),0 8px 24px rgb(0 0 0/.25);
+}
+@media (prefers-color-scheme: dark){
+  :root[data-theme="auto"]{
+    --bg:#0b1324; --bg2:#111b33; --fg:#e5e9f2; --muted:#9aa6bd; --line:#1f2b46;
+    --acc:#60a5fa; --acc2:#22d3ee; --chip:#16233f; --chipfg:#bfdbfe; --shadow:0 1px 2px rgb(0 0 0/.3),0 8px 24px rgb(0 0 0/.25);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--fg);line-height:1.6;font-size:16px}
+a{color:var(--acc)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc2);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--acc);color:#fff;padding:8px 14px;border-radius:8px;z-index:20}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* Bilingüe: el atributo lang del <html> decide qué texto se ve */
+html[lang="es"] .en, html[lang="en"] .es{display:none!important}
+
+/* Barra superior */
+header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;height:60px}
+.brand{font-weight:700;text-decoration:none;color:var(--fg);white-space:nowrap}
+nav.menu{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav.menu a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:.92rem;white-space:nowrap}
+nav.menu a:hover{color:var(--fg);background:var(--chip)}
+.tools{display:flex;gap:6px}
+.tools button{border:1px solid var(--line);background:var(--bg2);color:var(--fg);border-radius:8px;padding:6px 10px;font:inherit;font-size:.85rem;cursor:pointer}
+@media (max-width:760px){nav.menu{display:none}.tools{margin-left:auto}}
+
+/* Portada */
+.hero{padding-top:56px;padding-bottom:36px}
+.hero .grid{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.avatar{width:120px;height:120px;border-radius:50%;display:grid;place-items:center;font-size:2.4rem;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--acc),var(--acc2));box-shadow:var(--shadow);overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+.role{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--acc);font-weight:600;margin:0 0 10px}
+.meta{color:var(--muted);margin:0 0 18px;display:flex;flex-wrap:wrap;gap:6px 16px}
+.badge{display:inline-flex;align-items:center;gap:6px;color:#047857;font-weight:600}
+:root[data-theme="dark"] .badge{color:#34d399}
+@media (prefers-color-scheme: dark){:root[data-theme="auto"] .badge{color:#34d399}}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--line);color:var(--fg);background:var(--bg2)}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0b1324}
+@media (prefers-color-scheme: dark){:root[data-theme="auto"] .btn.primary{color:#0b1324}}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+@media (max-width:620px){.hero .grid{grid-template-columns:1fr}.avatar{width:96px;height:96px;font-size:2rem}}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:1.7rem;line-height:1.1;color:var(--acc)}
+.stat span{color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* Secciones */
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 20px;letter-spacing:-.01em;display:flex;align-items:baseline;gap:10px}
+h2 small{color:var(--acc2);font-size:.85rem;font-weight:700;font-variant-numeric:tabular-nums}
+h3{font-size:1.08rem;margin:0}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.lead{font-size:1.06rem;max-width:72ch}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
+.chips li{background:var(--chip);color:var(--chipfg);border-radius:999px;padding:3px 10px;font-size:.82rem;font-weight:500}
+
+/* Proyecto destacado */
+.featured{border-left:4px solid var(--acc2)}
+.featured .kicker{color:var(--acc2);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.metrics div{border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center}
+.metrics b{display:block;font-size:1.35rem;color:var(--acc)}
+.metrics span{font-size:.8rem;color:var(--muted)}
+@media (max-width:620px){.metrics{grid-template-columns:repeat(2,1fr)}}
+ul.points{margin:0;padding-left:1.1rem}
+ul.points li{margin:4px 0}
+
+/* Experiencia (línea de tiempo) */
+.timeline{position:relative;margin:0;padding:0;list-style:none}
+.timeline>li{position:relative;padding:0 0 22px 26px;border-left:2px solid var(--line);margin-left:6px}
+.timeline>li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.job-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px}
+.org{color:var(--muted);font-weight:500}
+.when{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+details.prev{margin-top:6px}
+details.prev summary{cursor:pointer;font-weight:600;color:var(--acc)}
+details.prev ul{margin:12px 0 0;padding-left:1.1rem}
+
+/* Competencias */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+
+/* Certificaciones */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.cert{display:flex;flex-direction:column;gap:2px}
+.cert .org{font-size:.88rem}
+.verify{font-size:.82rem;font-weight:600;margin-top:4px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:999px;background:#fef3c7;color:#92400e;margin-left:6px;vertical-align:2px}
+.small-list{columns:2 300px;column-gap:28px;padding-left:1.1rem;margin:0}
+.small-list li{break-inside:avoid;margin:3px 0}
+
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+
+/* Contacto */
+.contact{text-align:center}
+.contact .cta{justify-content:center;margin-top:16px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem;text-align:center;border-top:1px solid var(--line)}
+
+/* Impresión: solo el contenido */
+@media print{
+  header.top,.tools,.cta,.skip,footer .noprint{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  section{padding:14px 0;break-inside:avoid-page}
+  .card,.stat{box-shadow:none}
+  details.prev{display:block} details.prev>*{display:block}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#perfil"><span class="es">Saltar al contenido</span><span class="en">Skip to content</span></a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Carlos Díaz Hidalgo</a>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#perfil"><span class="es">Perfil</span><span class="en">Profile</span></a>
+      <a href="#ia"><span class="es">Proyecto IA</span><span class="en">AI project</span></a>
+      <a href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a>
+      <a href="#stack">Stack</a>
+      <a href="#certificaciones"><span class="es">Certificaciones</span><span class="en">Certifications</span></a>
+      <a href="#formacion"><span class="es">Formación</span><span class="en">Education</span></a>
+      <a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <button id="langBtn" type="button" aria-label="Change language / Cambiar idioma">EN</button>
+      <button id="themeBtn" type="button" aria-label="Tema claro u oscuro / Light or dark theme" title="Tema: automático / claro / oscuro"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" style="vertical-align:-3px"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ======================================================= PORTADA -->
+<div class="hero wrap" id="inicio">
+  <div class="grid">
+    <!-- Para usar foto: suba assets/foto.jpg y cambie "CD" por <img src="assets/foto.jpg" alt="Carlos Iván Díaz Hidalgo"> -->
+    <div class="avatar" aria-hidden="true">CD</div>
+    <div>
+      <h1>Carlos Iván Díaz Hidalgo</h1>
+      <p class="role">
+        <span class="es">Ingeniero de Software Backend Senior · Java &amp; IA aplicada (RAG / LLMs)</span>
+        <span class="en">Senior Backend Software Engineer · Java &amp; Applied AI (RAG / LLMs)</span>
+      </p>
+      <p class="meta">
+        <span>📍 Quito, Ecuador</span>
+        <span class="es">Remoto o presencial</span><span class="en">Remote or on-site</span>
+        <span class="badge"><span class="es">Disponible para incorporación inmediata</span><span class="en">Available immediately</span></span>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:carlos.dh08@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span class="es">Escríbame</span><span class="en">Email me</span></a>
+        <a class="btn" href="https://wa.me/593960573776" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
+          WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/in/carlos-diaz-hidalgo" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V21h-4V9Z"/></svg>
+          LinkedIn</a>
+        <a class="btn" href="assets/CV_Carlos_Diaz_Hidalgo.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+          <span class="es">Descargar CV (PDF)</span><span class="en">Download CV (PDF)</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>17</b><span class="es">años en desarrollo de software</span><span class="en">years building software</span></div>
+    <div class="stat"><b>13</b><span class="es">instituciones públicas y privadas</span><span class="en">public &amp; private organizations</span></div>
+    <div class="stat"><b>800</b><span class="es">ejecuciones evaluadas con RAGAS</span><span class="en">runs evaluated with RAGAS</span></div>
+    <div class="stat"><b>30+</b><span class="es">certificaciones y cursos (2023–2026)</span><span class="en">certifications &amp; courses (2023–2026)</span></div>
+  </div>
+</div>
+
+<!-- ======================================================= PERFIL -->
+<section id="perfil"><div class="wrap">
+  <h2><small>01</small><span class="es">Perfil</span><span class="en">Profile</span></h2>
+  <p class="lead es">Ingeniero en Informática y Ciencias de la Computación con más de 17 años de experiencia en desarrollo backend, arquitectura de software y bases de datos, en instituciones públicas y privadas de Ecuador (SRI, BIESS, Banco Central del Ecuador, Kruger Corp, SOAINT, MAG, SENESCYT). Especialista en Java (8–17, Jakarta EE, Spring Boot, JSF, Struts), microservicios, API REST y optimización de Oracle PL/SQL y PostgreSQL.</p>
+  <p class="lead en">Computer Science engineer with 17+ years of experience in backend development, software architecture and databases across public and private organizations in Ecuador (SRI, BIESS, Central Bank of Ecuador, Kruger Corp, SOAINT, MAG, SENESCYT). Specialist in Java (8–17, Jakarta EE, Spring Boot, JSF, Struts), microservices, REST APIs, and Oracle PL/SQL and PostgreSQL optimization.</p>
+  <p class="lead es">Maestría en Inteligencia Artificial Aplicada (en proceso de titulación), con un sistema RAG multiagente sobre LLMs para consulta de normativa tributaria evaluado en 800 ejecuciones con RAGAS. Entre 2025 y 2026 completé especializaciones en Java SE 17 Developer (Pearson), Microservicios Escalables (Vanderbilt University), Apache Kafka y Codificación Segura (UC Davis), además de formación en IA generativa con AWS, IBM y Google.</p>
+  <p class="lead en">Master's in Applied Artificial Intelligence (graduation in progress), with a multi-agent RAG system over LLMs for tax-regulation queries, evaluated in 800 runs with RAGAS. In 2025–2026 I completed specializations in Java SE 17 Developer (Pearson), Scalable Microservices (Vanderbilt University), Apache Kafka and Secure Coding (UC Davis), plus generative-AI training with AWS, IBM and Google.</p>
+</div></section>
+
+<!-- ======================================================= PROYECTO IA -->
+<section id="ia"><div class="wrap">
+  <h2><small>02</small><span class="es">Proyecto destacado · IA aplicada</span><span class="en">Featured project · Applied AI</span></h2>
+  <article class="card featured">
+    <div class="kicker"><span class="es">Trabajo de titulación · Maestría en IA Aplicada · 2025–2026</span><span class="en">Master's thesis · Applied AI · 2025–2026</span></div>
+    <h3 style="font-size:1.25rem;margin:6px 0 4px">
+      <span class="es">Sistema RAG multiagente con LLMs para consulta de normativa tributaria ecuatoriana</span>
+      <span class="en">Multi-agent RAG system with LLMs for querying Ecuadorian tax regulations</span>
+    </h3>
+    <div class="metrics" role="list">
+      <div role="listitem"><b>0.67</b><span>Faithfulness</span></div>
+      <div role="listitem"><b>0.64</b><span>Answer Relevancy</span></div>
+      <div role="listitem"><b>93 %</b><span class="es">precisión de recuperación</span><span class="en">retrieval precision</span></div>
+      <div role="listitem"><b>800</b><span class="es">ejecuciones · 4 estrategias · 2 LLMs</span><span class="en">runs · 4 strategies · 2 LLMs</span></div>
+    </div>
+    <ul class="points es">
+      <li><strong>Arquitectura híbrida:</strong> asistente RAG que combina búsqueda vectorial (ChromaDB + sentence-transformers) con un grafo de conocimiento (NetworkX) construido sobre 51 documentos normativos oficiales del SRI.</li>
+      <li><strong>Orquestación agéntica:</strong> 3 agentes especializados (refinamiento, validación y planificación) con guardrails de dominio y trazabilidad end-to-end, orquestando gemma4:31b-cloud y gpt-oss:20b-cloud vía Ollama.</li>
+      <li><strong>Evaluación experimental:</strong> 4 estrategias de recuperación y 2 LLMs comparados en 800 ejecuciones con RAGAS; el modo híbrido obtuvo los mejores resultados.</li>
+      <li><strong>Validación con expertos:</strong> escala Likert con 5 especialistas tributarios de 5 a 13 años de experiencia.</li>
+    </ul>
+    <ul class="points en">
+      <li><strong>Hybrid architecture:</strong> a RAG assistant combining vector search (ChromaDB + sentence-transformers) with a knowledge graph (NetworkX) built over 51 official SRI regulatory documents.</li>
+      <li><strong>Agentic orchestration:</strong> 3 specialized agents (refinement, validation and planning) with domain guardrails and end-to-end traceability, orchestrating gemma4:31b-cloud and gpt-oss:20b-cloud through Ollama.</li>
+      <li><strong>Experimental evaluation:</strong> 4 retrieval strategies and 2 LLMs compared over 800 runs with RAGAS; the hybrid mode achieved the best results.</li>
+      <li><strong>Expert validation:</strong> Likert-scale assessment by 5 tax specialists with 5 to 13 years of experience.</li>
+    </ul>
+    <ul class="chips"><li>RAG</li><li>LLMs</li><li>Ollama</li><li>ChromaDB</li><li>sentence-transformers</li><li>NetworkX</li><li>RAGAS</li><li>Python</li></ul>
+  </article>
+</div></section>
+
+<!-- ======================================================= EXPERIENCIA -->
+<section id="experiencia"><div class="wrap">
+  <h2><small>03</small><span class="es">Experiencia</span><span class="en">Experience</span></h2>
+  <ol class="timeline">
+    <li>
+      <div class="job-head"><h3><span class="es">Especialista de Desarrollo</span><span class="en">Development Specialist</span> · <span class="org">Servicio de Rentas Internas (SRI)</span></h3>
+      <span class="when"><span class="es">Ago. 2022 – Ago. 2026</span><span class="en">Aug 2022 – Aug 2026</span></span></div>
+      <ul class="points es">
+        <li><strong>Alta disponibilidad:</strong> administré y mantuve aplicaciones Java empresariales en producción, asegurando la continuidad de procesos tributarios críticos.</li>
+        <li><strong>Desarrollo full stack:</strong> construí interfaces con JavaServer Faces (JSF) e integré capas de persistencia con JPA sobre Oracle.</li>
+        <li><strong>Calidad y refactorización:</strong> apliqué Clean Code y codificación segura para eliminar code smells, reducir vulnerabilidades y optimizar SQL y PL/SQL.</li>
+      </ul>
+      <ul class="points en">
+        <li><strong>High availability:</strong> ran and maintained enterprise Java applications in production, keeping critical tax processes running.</li>
+        <li><strong>Full-stack development:</strong> built JavaServer Faces (JSF) interfaces and integrated JPA persistence layers on Oracle.</li>
+        <li><strong>Quality &amp; refactoring:</strong> applied Clean Code and secure-coding standards to remove code smells, reduce vulnerabilities and optimize SQL and PL/SQL.</li>
+      </ul>
+      <ul class="chips"><li>Java</li><li>JSF</li><li>JPA</li><li>Oracle</li><li>PL/SQL</li><li>Secure coding</li></ul>
+    </li>
+    <li>
+      <div class="job-head"><h3><span class="es">Consultor Técnico</span><span class="en">Technical Consultant</span> · <span class="org">Kruger Corp</span></h3>
+      <span class="when"><span class="es">Jun. 2022 – Jul. 2022</span><span class="en">Jun 2022 – Jul 2022</span></span></div>
+      <p class="es" style="margin:4px 0">Mantenimiento correctivo y desarrollo de módulos web en Java, Struts y JavaScript para clientes corporativos.</p>
+      <p class="en" style="margin:4px 0">Corrective maintenance and development of web modules in Java, Struts and JavaScript for corporate clients.</p>
+      <ul class="chips"><li>Java</li><li>Struts</li><li>JavaScript</li></ul>
+    </li>
+    <li>
+      <div class="job-head"><h3><span class="es">Especialista de Desarrollo Informático</span><span class="en">IT Development Specialist</span> · <span class="org"><span class="es">Banco Central del Ecuador</span><span class="en">Central Bank of Ecuador</span></span></h3>
+      <span class="when"><span class="es">Sep. 2021 – Dic. 2021</span><span class="en">Sep 2021 – Dec 2021</span></span></div>
+      <ul class="points es">
+        <li><strong>Backend y QA:</strong> desarrollé componentes Java empresariales, ejecuté control de calidad y elaboré documentación técnica.</li>
+        <li><strong>Sistemas financieros:</strong> soporte y mantenimiento de aplicaciones transaccionales en Java, JSF y Sybase.</li>
+      </ul>
+      <ul class="points en">
+        <li><strong>Backend &amp; QA:</strong> developed enterprise Java components, ran quality control and wrote technical documentation.</li>
+        <li><strong>Financial systems:</strong> support and maintenance of transactional applications in Java, JSF and Sybase.</li>
+      </ul>
+      <ul class="chips"><li>Java</li><li>JSF</li><li>Sybase</li><li>QA</li></ul>
+    </li>
+    <li>
+      <div class="job-head"><h3><span class="es">Analista Senior de Mantenimiento y Programación</span><span class="en">Senior Maintenance &amp; Programming Analyst</span> · <span class="org">BIESS</span></h3>
+      <span class="when"><span class="es">Mar. 2021 – Ago. 2021</span><span class="en">Mar 2021 – Aug 2021</span></span></div>
+      <ul class="points es">
+        <li><strong>Desarrollo web financiero:</strong> construí y mantuve servicios web institucionales en Java y JSF para solicitudes crediticias de afiliados.</li>
+        <li><strong>Optimización de bases de datos:</strong> diseñé y optimicé consultas complejas en Oracle y PostgreSQL, reduciendo tiempos de respuesta en reportes.</li>
+      </ul>
+      <ul class="points en">
+        <li><strong>Financial web development:</strong> built and maintained institutional web services in Java and JSF for members' credit applications.</li>
+        <li><strong>Database optimization:</strong> designed and tuned complex Oracle and PostgreSQL queries, cutting report response times.</li>
+      </ul>
+      <ul class="chips"><li>Java</li><li>JSF</li><li>Oracle</li><li>PostgreSQL</li></ul>
+    </li>
+    <li>
+      <div class="job-head"><h3><span class="es">Ingeniero de Software</span><span class="en">Software Engineer</span> · <span class="org">SOAINT S.A.</span></h3>
+      <span class="when"><span class="es">Ene.–Feb. 2020 · Nov. 2020 – Ene. 2021</span><span class="en">Jan–Feb 2020 · Nov 2020 – Jan 2021</span></span></div>
+      <ul class="points es">
+        <li><strong>Microservicios y POS:</strong> microservicios y API REST en Spring Boot sobre Oracle (triggers y procedimientos almacenados) e interfaces React JS para sistemas de punto de venta.</li>
+        <li><strong>Integración de datos:</strong> canalizaciones de extracción e intercambio seguro de información mediante servicios REST, bajo Scrum.</li>
+      </ul>
+      <ul class="points en">
+        <li><strong>Microservices &amp; POS:</strong> Spring Boot microservices and REST APIs on Oracle (triggers and stored procedures) and React JS interfaces for point-of-sale systems.</li>
+        <li><strong>Data integration:</strong> pipelines for secure data extraction and exchange through REST services, using Scrum.</li>
+      </ul>
+      <ul class="chips"><li>Spring Boot</li><li><span class="es">Microservicios</span><span class="en">Microservices</span></li><li>API REST</li><li>Oracle</li><li>React JS</li><li>Scrum</li></ul>
+    </li>
+    <li>
+      <div class="job-head"><h3><span class="es">Ingeniero de Software Freelance</span><span class="en">Freelance Software Engineer</span> · <span class="org"><span class="es">Desarrollo independiente</span><span class="en">Independent</span></span></h3>
+      <span class="when"><span class="es">Mar. 2020 – Nov. 2021</span><span class="en">Mar 2020 – Nov 2021</span></span></div>
+      <p class="es" style="margin:4px 0">Aplicaciones Android nativas en Kotlin y sistemas web/desktop en Spring Boot, aplicando TDD y consumo de API REST.</p>
+      <p class="en" style="margin:4px 0">Native Android apps in Kotlin and web/desktop systems in Spring Boot, using TDD and REST API integration.</p>
+      <ul class="chips"><li>Kotlin</li><li>Android</li><li>Spring Boot</li><li>TDD</li></ul>
+    </li>
+    <li>
+      <div class="job-head"><h3><span class="es">Analista de Desarrollo</span><span class="en">Development Analyst</span> · <span class="org"><span class="es">Secretaría Técnica Plan Toda Una Vida</span><span class="en">Plan Toda Una Vida Technical Secretariat</span></span></h3>
+      <span class="when"><span class="es">Oct. 2019 – Nov. 2019</span><span class="en">Oct 2019 – Nov 2019</span></span></div>
+      <p class="es" style="margin:4px 0">Robot de automatización para validar identidad e información tributaria (Registro Civil / SRI) sobre PostgreSQL y QA de una app Android.</p>
+      <p class="en" style="margin:4px 0">Automation bot to validate identity and tax information (Civil Registry / SRI) on PostgreSQL, plus QA of an Android app.</p>
+    </li>
+    <li>
+      <div class="job-head"><h3><span class="es">Analista de Soporte e Infraestructura</span><span class="en">Support &amp; Infrastructure Analyst</span> · <span class="org"><span class="es">Ministerio de Agricultura y Ganadería</span><span class="en">Ministry of Agriculture and Livestock</span></span></h3>
+      <span class="when"><span class="es">Jul. 2018 – Abr. 2019</span><span class="en">Jul 2018 – Apr 2019</span></span></div>
+      <p class="es" style="margin:4px 0">Desarrollo de APIs de microservicios en Java 8, mantenimiento de sistemas en Spring Framework y QA de aplicaciones web y móviles.</p>
+      <p class="en" style="margin:4px 0">Microservice API development in Java 8, maintenance of Spring Framework systems and QA of web and mobile apps.</p>
+    </li>
+  </ol>
+
+  <details class="prev card">
+    <summary><span class="es">Trayectoria previa (2004 – 2017)</span><span class="en">Earlier career (2004 – 2017)</span></summary>
+    <ul class="es">
+      <li><strong>Analista de Becas · IFTH</strong> (oct.–dic. 2017): análisis funcional de la plataforma PUSAK sobre Java EE y JBoss EAP 6.4.</li>
+      <li><strong>Analista de Proyectos III · SENESCYT</strong> (jun.–dic. 2016): requerimientos con Scrum, reportes en JasperReports Server y desarrollo Java/JSF/PrimeFaces.</li>
+      <li><strong>Analista de Telecomunicaciones y Web · Ministerio de Educación</strong> (sep. 2014 – nov. 2015): Java EE 7 sobre JBoss y reportes JasperReports en Oracle 11g.</li>
+      <li><strong>Analista de Desarrollo Tecnológico · ARCOM</strong> (oct. 2013 – mar. 2014): desarrollo en PowerBuilder, consultas Sybase y soporte técnico.</li>
+      <li><strong>Ingeniero de Software · Sonda del Ecuador</strong> (may. 2008 – nov. 2011): interfaces web empresariales en Java.</li>
+      <li><strong>Desarrollador de Software · Power Games / Power PC</strong> (mar. 2004 – feb. 2008): sistemas Java EE, Oracle Designer, Forms/Reports 6i y aplicaciones móviles.</li>
+    </ul>
+    <ul class="en">
+      <li><strong>Scholarship Analyst · IFTH</strong> (Oct–Dec 2017): functional analysis of the PUSAK platform on Java EE and JBoss EAP 6.4.</li>
+      <li><strong>Project Analyst III · SENESCYT</strong> (Jun–Dec 2016): requirements with Scrum, JasperReports Server reports and Java/JSF/PrimeFaces development.</li>
+      <li><strong>Telecom &amp; Web Analyst · Ministry of Education</strong> (Sep 2014 – Nov 2015): Java EE 7 on JBoss and JasperReports reports on Oracle 11g.</li>
+      <li><strong>Technology Development Analyst · ARCOM</strong> (Oct 2013 – Mar 2014): PowerBuilder development, Sybase queries and technical support.</li>
+      <li><strong>Software Engineer · Sonda del Ecuador</strong> (May 2008 – Nov 2011): enterprise web interfaces in Java.</li>
+      <li><strong>Software Developer · Power Games / Power PC</strong> (Mar 2004 – Feb 2008): Java EE systems, Oracle Designer, Forms/Reports 6i and mobile apps.</li>
+    </ul>
+  </details>
+</div></section>
+
+<!-- ======================================================= STACK -->
+<section id="stack"><div class="wrap">
+  <h2><small>04</small><span class="es">Competencias técnicas</span><span class="en">Technical skills</span></h2>
+  <div class="skills">
+    <div class="card"><h3><span class="es">Lenguajes</span><span class="en">Languages</span></h3>
+      <ul class="chips"><li>Java 8–17</li><li>Jakarta EE</li><li>Python</li><li>JavaScript</li><li>Kotlin</li><li>SQL</li><li>PL/SQL</li><li>C/C++ (secure coding)</li></ul></div>
+    <div class="card"><h3>Backend &amp; <span class="es">Arquitectura</span><span class="en">Architecture</span></h3>
+      <ul class="chips"><li>Spring Boot</li><li>Spring Cloud (Eureka)</li><li>Quarkus</li><li>JPA/Hibernate</li><li>EJB</li><li>JSF/PrimeFaces</li><li>Struts</li><li>API REST</li><li><span class="es">Microservicios</span><span class="en">Microservices</span></li><li><span class="es">Concurrencia</span><span class="en">Concurrency</span></li></ul></div>
+    <div class="card"><h3><span class="es">IA generativa y datos</span><span class="en">Generative AI &amp; data</span></h3>
+      <ul class="chips"><li>LLMs</li><li><span class="es">RAG multiagente</span><span class="en">Multi-agent RAG</span></li><li>Foundation models</li><li>Embeddings</li><li><span class="es">Bases vectoriales</span><span class="en">Vector databases</span></li><li><span class="es">Grafos de conocimiento</span><span class="en">Knowledge graphs</span></li><li>RAGAS</li><li>Ollama</li><li>Prompt engineering</li></ul></div>
+    <div class="card"><h3><span class="es">Bases de datos</span><span class="en">Databases</span></h3>
+      <ul class="chips"><li>Oracle (SQL, PL/SQL)</li><li>PostgreSQL</li><li>Sybase</li><li>ChromaDB</li></ul></div>
+    <div class="card"><h3><span class="es">Mensajería y frontend</span><span class="en">Messaging &amp; frontend</span></h3>
+      <ul class="chips"><li>Apache Kafka</li><li>Kafka Streams</li><li>Kafka Connect</li><li>React JS</li><li>Vue.js</li></ul></div>
+    <div class="card"><h3>Cloud &amp; DevOps</h3>
+      <ul class="chips"><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>CI/CD</li><li>Git/GitHub</li><li>AWS (Amazon Bedrock)</li><li>Azure AI</li><li>Oracle Cloud (OCI)</li></ul></div>
+    <div class="card"><h3><span class="es">Seguridad y métodos</span><span class="en">Security &amp; methods</span></h3>
+      <ul class="chips"><li>Secure coding</li><li><span class="es">Modelado de amenazas</span><span class="en">Threat modeling</span></li><li>QA &amp; testing</li><li>TDD</li><li>Scrum (SFPC)</li><li>Clean Code</li><li>Clean Architecture</li></ul></div>
+  </div>
+</div></section>
+
+<!-- ======================================================= CERTIFICACIONES -->
+<section id="certificaciones"><div class="wrap">
+  <h2><small>05</small><span class="es">Certificaciones y especializaciones</span><span class="en">Certifications &amp; specializations</span></h2>
+  <p class="es" style="color:var(--muted);margin-top:-8px">Los enlaces «Verificar» abren la credencial oficial en Coursera.</p>
+  <p class="en" style="color:var(--muted);margin-top:-8px">"Verify" links open the official credential on Coursera.</p>
+
+  <h3 style="margin:18px 0 10px"><span class="es">Especializaciones profesionales</span><span class="en">Professional specializations</span></h3>
+  <div class="certs">
+    <div class="card cert"><strong>Java SE 17 Developer (1Z0-829)</strong><span class="org">Pearson · Coursera</span></div>
+    <div class="card cert"><strong>Scalable Microservices for Developers</strong><span class="org">Vanderbilt University · Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/specialization/2NDCUE4T87QJ" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+    <div class="card cert"><strong>Apache Kafka</strong><span class="org">LearnKartS · Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/specialization/QN2WPUDOQIRR" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+    <div class="card cert"><strong>Secure Coding Practices</strong><span class="org">UC Davis · Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/specialization/1OIIJQPPL1WL" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+  </div>
+
+  <h3 style="margin:22px 0 10px"><span class="es">IA generativa, RAG y cloud</span><span class="en">Generative AI, RAG &amp; cloud</span></h3>
+  <div class="certs">
+    <div class="card cert"><strong>Develop Generative AI Applications: Get Started</strong><span class="org">IBM · Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/VMEP46M9EB4A" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+    <div class="card cert"><strong>Build RAG Applications: Get Started</strong><span class="org">IBM · Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/NZGUARRQR1BU" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+    <div class="card cert"><strong>Vector Databases for RAG: An Introduction</strong><span class="org">IBM · Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/ZJI6NE7PAJXV" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+    <div class="card cert"><strong>AI for App Building</strong><span class="org">Google · Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/L1QZV1ENMLB6" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+    <div class="card cert"><strong>Gen AI Dev – Analyze Requirements &amp; Design GenAI Solutions</strong><span class="org">Amazon Web Services · Coursera</span></div>
+    <div class="card cert"><strong>Gen AI Dev – Select and Configure Foundation Models</strong><span class="org">Amazon Web Services · Coursera</span></div>
+    <div class="card cert"><strong>Amazon Bedrock Getting Started</strong><span class="org">AWS Training &amp; Certification</span></div>
+    <div class="card cert"><strong>Building AI-Powered Web Applications with React and Next.js<span class="tag"><span class="es">En curso</span><span class="en">In progress</span></span></strong><span class="org">SkillsBooster Academy · Coursera</span></div>
+    <div class="card cert"><strong>AWS Serverless &amp; AI/ML Project-Based Cloud Specialization<span class="tag"><span class="es">En curso</span><span class="en">In progress</span></span></strong><span class="org">EDUCBA · Coursera</span></div>
+    <div class="card cert"><strong><span class="es">Fundamentos de IA con IBM SkillsBuild</span><span class="en">AI Fundamentals with IBM SkillsBuild</span></strong><span class="org">Cisco Networking Academy · U. Tecnológica Israel</span></div>
+    <div class="card cert"><strong><span class="es">Fundamentos de Python</span><span class="en">Python Essentials</span></strong><span class="org">Cisco Networking Academy · Python Institute · UIDE</span></div>
+    <div class="card cert"><strong><span class="es">Crea una aplicación web con Vue.js</span><span class="en">Build a web app with Vue.js</span></strong><span class="org">Coursera</span>
+      <a class="verify" href="https://coursera.org/verify/7EI4OMTW3KKQ" target="_blank" rel="noopener"><span class="es">Verificar ↗</span><span class="en">Verify ↗</span></a></div>
+  </div>
+
+  <h3 style="margin:22px 0 10px"><span class="es">Formación complementaria (2023 – 2026)</span><span class="en">Additional training (2023 – 2026)</span></h3>
+  <div class="card">
+    <ul class="small-list">
+      <li>Microservicios con Docker y Kubernetes — Udemy, 32.5 h</li>
+      <li>Bootcamp DevOps Contenedores — Código Facilito, 34 h</li>
+      <li>Introduction to Kubernetes LFS158 — Linux Foundation, 35 h</li>
+      <li>Oracle Cloud Infrastructure 2023 Foundations &amp; AI — Oracle University, 70 h</li>
+      <li>Azure AI AI-050T00 &amp; AI-102T00-A — Netec / Microsoft, 80 h</li>
+      <li>Especialización IBM RAG &amp; AI — Coursera, 40 h</li>
+      <li>Foundations of Prompt Engineering — AWS / IBM, 40 h</li>
+      <li>Prompt Engineering con ChatGPT — Platzi, 15 h</li>
+      <li>Conceptos de Ciencia de Datos — Código Facilito</li>
+      <li>Developing Secure Software LFD121 — Linux Foundation / OpenSSF, 35 h</li>
+      <li>Codificación Segura en Java Web — Udemy, 12.5 h</li>
+      <li>Testing en Java — Platzi</li>
+      <li>Arquitecturas Limpias — Platzi, 15 h</li>
+      <li>Bootcamp Java Profesional — Código Facilito, 9 semanas</li>
+      <li>Master Microservices Spring Cloud &amp; Eureka — Udemy, 40 h</li>
+      <li>Jakarta EE 9 / EJB — Udemy, 50 h</li>
+      <li>Quarkus Microservicios — Udemy, 20 h</li>
+      <li>Administración de Bases de Datos Oracle — Edutin Academy, 180 h</li>
+      <li>Scrum Foundation Professional Certificate (SFPC) — CertiProf</li>
+      <li>Business Intelligence Foundation Professional Certificate (BIFPC) — CertiProf</li>
+      <li><span class="es">Preparación PMP (autoestudio, 26 h)</span><span class="en">PMP preparation (self-study, 26 h)</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- ======================================================= FORMACIÓN -->
+<section id="formacion"><div class="wrap">
+  <h2><small>06</small><span class="es">Formación e idiomas</span><span class="en">Education &amp; languages</span></h2>
+  <div class="two">
+    <div class="card">
+      <h3><span class="es">Maestría en Inteligencia Artificial Aplicada</span><span class="en">Master's in Applied Artificial Intelligence</span></h3>
+      <p style="margin:4px 0;color:var(--muted)">Universidad Tecnológica Israel · <span class="es">en proceso de validación</span><span class="en">pending validation</span></p>
+      <p style="margin:0"><span class="es">Trabajo de titulación: sistema RAG multiagente.</span><span class="en">Thesis: multi-agent RAG system.</span></p>
+    </div>
+    <div class="card">
+      <h3><span class="es">Ingeniería en Informática y Ciencias de la Computación</span><span class="en">B.Eng. in Computer Science and Informatics</span></h3>
+      <p style="margin:4px 0;color:var(--muted)">Universidad Cristiana Latinoamericana</p>
+      <p style="margin:0"><span class="es">Registro SENESCYT</span><span class="en">SENESCYT registration</span> 1054-13-5741</p>
+    </div>
+    <div class="card">
+      <h3><span class="es">Idiomas</span><span class="en">Languages</span></h3>
+      <p style="margin:6px 0 0" class="es">Español: nativo · Inglés: intermedio · Francés: básico</p>
+      <p style="margin:6px 0 0" class="en">Spanish: native · English: intermediate · French: basic</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ======================================================= CONTACTO -->
+<section id="contacto" class="contact"><div class="wrap">
+  <h2 style="justify-content:center"><span class="es">¿Conversamos?</span><span class="en">Let's talk</span></h2>
+  <p class="lead es" style="margin:0 auto">Busco un rol backend senior o de IA aplicada, remoto o presencial desde Quito.</p>
+  <p class="lead en" style="margin:0 auto">Looking for a senior backend or applied-AI role, remote or on-site in Quito.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:carlos.dh08@gmail.com">carlos.dh08@gmail.com</a>
+    <a class="btn" href="https://wa.me/593960573776" target="_blank" rel="noopener">WhatsApp +593 96 057 3776</a>
+    <a class="btn" href="https://www.linkedin.com/in/carlos-diaz-hidalgo" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="assets/CV_Carlos_Diaz_Hidalgo.pdf" download><span class="es">CV en PDF</span><span class="en">CV (PDF)</span></a>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year">2026</span> Carlos Iván Díaz Hidalgo · Quito, Ecuador
+    <span class="noprint"> · <a href="https://github.com/cdiazhi">GitHub</a> · <a href="resume.json">resume.json</a> · <a href="llms.txt">llms.txt</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+
+  // Idioma: ?lang=en en la URL > preferencia guardada > idioma del navegador > español
+  var params = new URLSearchParams(location.search);
+  var lang = params.get('lang') || load('lang') ||
+             ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+  var langBtn = document.getElementById('langBtn');
+  function setLang(l) {
+    root.lang = (l === 'en') ? 'en' : 'es';
+    langBtn.textContent = root.lang === 'es' ? 'EN' : 'ES';
+    document.title = root.lang === 'es'
+      ? 'Carlos Iván Díaz Hidalgo | Ingeniero de Software Backend Senior · Java & IA aplicada'
+      : 'Carlos Iván Díaz Hidalgo | Senior Backend Software Engineer · Java & Applied AI';
+  }
+  setLang(lang);
+  langBtn.addEventListener('click', function () {
+    setLang(root.lang === 'es' ? 'en' : 'es'); save('lang', root.lang);
+  });
+
+  // Tema: auto (según el sistema) > claro > oscuro
+  var themes = ['auto', 'light', 'dark'];
+  var theme = load('theme') || 'auto';
+  root.dataset.theme = theme;
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    theme = themes[(themes.indexOf(theme) + 1) % themes.length];
+    root.dataset.theme = theme; save('theme', theme);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

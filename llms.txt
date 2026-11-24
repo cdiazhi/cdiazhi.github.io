@@ -1,0 +1,36 @@
+# Carlos Iván Díaz Hidalgo
+
+> Ingeniero de Software Backend Senior (Java & IA aplicada) con 17 años de experiencia. Quito, Ecuador. Disponible para incorporación inmediata, remoto o presencial. Senior Backend Software Engineer (Java & Applied AI), 17 years of experience, available immediately (remote or on-site).
+
+Este archivo resume el perfil en texto plano para asistentes de IA, buscadores y herramientas de selección de personal. This file summarizes the profile in plain text for AI assistants, search engines and recruiting tools.
+
+## Perfil / Profile
+
+- Java 8–17, Jakarta EE, Spring Boot, JSF, Struts, microservicios, API REST.
+- Optimización de Oracle (SQL, PL/SQL) y PostgreSQL.
+- Maestría en Inteligencia Artificial Aplicada (Universidad Tecnológica Israel, en proceso de validación): sistema RAG multiagente con LLMs para consulta de normativa tributaria ecuatoriana; 800 ejecuciones evaluadas con RAGAS (Faithfulness 0.67, Answer Relevancy 0.64, 93 % de precisión de recuperación).
+- Ingeniería en Informática y Ciencias de la Computación (Universidad Cristiana Latinoamericana).
+- Idiomas: español nativo, inglés intermedio, francés básico.
+
+## Experiencia reciente / Recent experience
+
+- Especialista de Desarrollo, Servicio de Rentas Internas (SRI), ago. 2022 – ago. 2026: Java, JSF, JPA, Oracle, PL/SQL, codificación segura.
+- Consultor Técnico, Kruger Corp, jun. – jul. 2022: Java, Struts, JavaScript.
+- Especialista de Desarrollo Informático, Banco Central del Ecuador, sep. – dic. 2021: Java, JSF, Sybase.
+- Analista Senior de Mantenimiento y Programación, BIESS, mar. – ago. 2021: Java, JSF, Oracle, PostgreSQL.
+- Ingeniero de Software, SOAINT S.A., 2020 – 2021: Spring Boot, microservicios, API REST, React JS, Oracle.
+- Ingeniero de Software Freelance, mar. 2020 – nov. 2021: Kotlin/Android, Spring Boot, TDD.
+- Experiencia previa (2004 – 2019): MAG, Plan Toda Una Vida, IFTH, SENESCYT, Ministerio de Educación, ARCOM, Sonda del Ecuador, Power Games / Power PC.
+
+## Enlaces / Links
+
+- [Sitio web / Website](https://cdiazhi.github.io/)
+- [CV en PDF](https://cdiazhi.github.io/assets/CV_Carlos_Diaz_Hidalgo.pdf)
+- [CV estructurado (JSON Resume)](https://cdiazhi.github.io/resume.json)
+- [LinkedIn](https://www.linkedin.com/in/carlos-diaz-hidalgo)
+- [GitHub](https://github.com/cdiazhi)
+
+## Contacto / Contact
+
+- Correo: carlos.dh08@gmail.com
+- WhatsApp: +593 96 057 3776
